@@ -67,7 +67,6 @@ for turn in range(1, n_turns+1):
         choice = int(input("Elige una accion: "))
 
         if choice == 1:
-            # Ataque normal
             for idx, target in enumerate(alive_targets):
                 print(f"{idx+1}. {target.name} (HP: {target.hp})")
             target_choice = int(input("Elige a quien atacar: ")) - 1
